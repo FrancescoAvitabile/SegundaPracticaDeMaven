@@ -1,0 +1,85 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>es.ulpgc.hpds</groupId>
+  <artifactId>project2</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>project2</name>
+  <url>http://maven.apache.org</url>
+
+  <licenses>
+    <license>
+      <name>ulpgc</name>
+      <url>http://...</url>
+      <comments>Licencia de educacion</comments>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>ULPGC</name>
+    <url>http://www.ulpgc.es</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>Bartłomiej Matlęga</name>
+      <email>bartlomiej@matlega.pl</email>
+      <url>bartlomiej.matlega.pl</url>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <name>Francesco Avitabile</name>
+      <email>F.Avitabile8@studenti.unisa.it</email>
+      <url>francesco.avitabile.com</url>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>0</timezone>
+    </developer>
+  </developers>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <servlet-api.version>2.4</servlet-api.version>
+    <jstl.version>1.1.2</jstl.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>oracle</groupId>
+      <artifactId>oracle-jdbc</artifactId>
+      <version>12.1.0.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>${servlet-api.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>${jstl.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>${jstl.version}</version>
+    </dependency>
+  </dependencies>
+</project>
